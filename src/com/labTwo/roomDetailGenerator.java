@@ -6,6 +6,7 @@ public class roomDetailGenerator {
 
 	public static void detailGenerator() {
 
+		//CHANGED SUCCESSFULLY
 		//I create an object of the Scanner class to receive user input.
 		
 		Scanner scnr = new Scanner(System.in);
@@ -24,7 +25,8 @@ public class roomDetailGenerator {
 		
 		switch (measurementChoice) {
 		
-			case 'M' | 'm':
+			case 'M':
+			case 'm':
 				
 				//If the user chooses metric, I receive and validate the input, making sure it is a positive number.
 				
@@ -62,11 +64,13 @@ public class roomDetailGenerator {
 
 					//I ask the user if they wish to continue and exit if they don't.
 				
-					case 'Y' | 'y':
+					case 'Y':
+					case 'y':
 						detailGenerator();
 					break;
 
-					case 'N' | 'n':
+					case 'N':
+					case 'n':
 						System.out.println("\nHave a good day.");
 						System.exit(0);
 					break;
@@ -79,7 +83,8 @@ public class roomDetailGenerator {
 
 				}
 				
-			case 'I' | 'i':
+			case 'I':
+			case 'i':
 				
 				/*
 				 * If the user chooses Imperial, I prompt the user to enter feet and inches.
@@ -162,17 +167,20 @@ public class roomDetailGenerator {
 
 					//I ask the user if they wish to continue and exit if they don't.
 				
-					case 'Y' | 'y':
+					case 'Y':
+					case 'y':
 						detailGenerator();
 					break;
 
-					case 'N' | 'n':
+					case 'N':
+					case 'n':
 						System.out.println("\nHave a good day.");
 						System.exit(0);
 					break;
 					
 					default:
 						System.out.println("\nInvalid Entry. Please restart the program.");
+						System.exit(0);
 					break;
 
 				}
